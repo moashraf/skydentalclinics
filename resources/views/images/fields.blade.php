@@ -1,0 +1,34 @@
+<!-- Title Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('title', 'Title:') !!}
+    {!! Form::text('title', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Body Field -->
+<div class="form-group col-sm-12 col-lg-12">
+    {!! Form::label('body', 'Body:') !!}
+    {!! Form::textarea('body', null, ['class' => 'form-control']) !!}
+</div>
+
+ 
+<div class="form-group col-sm-6">
+    {!! Form::label('single_photo', 'Single Photo:') !!}
+    {!! Form::file('single_photo') !!}
+</div>
+<!-- Type Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('type', 'Type:') !!}
+    {!! Form::text('type', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Link Field -->
+<div class="form-group col-sm-6">
+    {!! Form::label('link', 'Link:') !!}
+    {!! Form::text('link', null, ['class' => 'form-control']) !!}
+</div>
+
+<!-- Submit Field -->
+<div class="form-group col-sm-12">
+    {!! Form::submit('Save', ['class' => 'btn btn-primary']) !!}
+    <a href="{!! route('images.index') !!}" class="btn btn-default">Cancel</a>
+</div>
